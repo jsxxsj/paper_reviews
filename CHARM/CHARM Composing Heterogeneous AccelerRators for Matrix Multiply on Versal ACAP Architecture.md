@@ -10,7 +10,6 @@ category: paper_review
 ---
 ## Contribution
 ### 1.problem/observation
-![](Pasted%20image%2020230822173213.png)
 
 ### 2.solution
 
