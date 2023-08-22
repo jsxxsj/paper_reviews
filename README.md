@@ -4,7 +4,7 @@ This is a repo listing some of the reading results of the papers, (theoretically
 currently the papers will be organized in 1 folder/paper, maybe we can use list of links to organize them.
 
 ## here is a test for title
-#### here is a smal title
+#### here is a small title
 
 here is a test for *Italic*, **bold**, ==highlight==, --delete--
 
