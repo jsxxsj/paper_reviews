@@ -48,4 +48,5 @@ Target: max overall throughput
 	- What's the exact shape changing in a MM/convolution/AIE MM
 ---
 ## Reflection
+Using the view of optimization to plan the resources and tasks on GPU will be a future target of ours. However, the tasks and resources on GPU may not be all the same as on VCK190, and so does the performance, thus a new analytic model have to be explored and setup. 
 
