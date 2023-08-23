@@ -28,13 +28,24 @@ Resources/ constrains:
 Target: max overall throughput
 - Task partition: sort-based
 	- tasks of similar sizes are clustered
-	- 
+- Resource partition
+	- AIE and PL: proportional
+	- memory: same at first --> fine-tune
+
+#### runtime scheduling
+2 processes --> track each layer
 
 ### 3.experiment
-
+- setup
+	- VCK 190
+- baseline
+	- one monolithic, 8 duplicate acc on VCK 190
+- results
+	- ![](attachments/Pasted%20image%2020230823103725.png)
 ---
 ## Questions
-
+- about single acc modeling
+	- What's the exact shape changing in a MM/convolution/AIE MM
 ---
 ## Reflection
 
