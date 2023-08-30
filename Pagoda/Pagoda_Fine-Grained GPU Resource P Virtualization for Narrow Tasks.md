@@ -92,4 +92,6 @@ typically a task takes one kernel in CUDA, so even works like hyper-Q enables 32
 - The GPU utilization does suffers from so-called "narrow tasks"
 - The CUDA core resource and shared memory can be managed in some extent, while require some heavy efforts
 - This work may not directly guide our plan, for it's in the level between tasks, however, in our plan, we plan to optimize the behavior in a task
-
+- Though, it seems that we have some space to further optimize:
+	- The vEUs are not explicitly controlled, it's size is defined by max rtask
+	- TRT shows that through highly-optimized kernels, we can still reach high performance, how can we get a multi-layer, fine-grained and automatic strategy?
