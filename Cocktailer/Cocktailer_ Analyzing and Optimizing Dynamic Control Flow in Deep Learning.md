@@ -109,7 +109,15 @@ These models take a large proportion in DNNs
 ###### uProgram scheduling
 - uProgram
 	- the generated execution plan of the whole program
+- constrain
+	- the unit level of control flow should not be lower than the unit level of data flow in the body.
+- Traverse-based bottom-up scheduling policy
+	- ![](attachments/Pasted%20image%2020230906170901.png)
 
+2. (2)the ulevel is bounded by the device, and the uPrograms are represented by a list.
+3. (3-4)if g is a dataflow uOperator, and it's lowest level is NULL, its level will be assigned to 0;
+4. (5-18)if the u level is NULL and the operator is not a dataflow uOperator, it will:
+	1. (6-8) for all of its sub operators, it will recursively schedule them, get the uPrograms and corresponding
 
 ### 3.Experiment
 
