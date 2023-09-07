@@ -12,6 +12,15 @@ category: paper_review
 ### 0.Background
 
 ### 1.Problem/Observation
+###### Modern DNNs are memory bounded
+- Modern models "tend to process **high-fidelity data** and generate **large activations** across layers."
+![](attachments/Pasted%20image%2020230907104715.png)
+- highlight the need for optimizing memory efficiency
+
+###### Conflicted intra- and inter-operator data reuse patterns
+- An operator is often implemented as nested multi-level loops over all tensor dimensions
+- Within the operator, the data reuse **across multiple memory layers** are often **implicitly optimized** using **loop tiling** 
+- 
 
 ### 2.Solution
 

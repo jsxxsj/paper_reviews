@@ -122,12 +122,29 @@ These models take a large proportion in DNNs
 	3. (9-17) we get an existing uProgram, to see if we can merge it to current sub operator
 5. (19-20) if the ulevel isn't NULL, we can 
 
+###### scheduling optimizations: 
+- function inline
+- loop unroll
+- Recursion unroll
 
+###### Implementation
+Schedule_Operater
+- Rammer
+- AutoTVM
+- Ansor
+- Roller
+- manually implemented kernels
+
+Example uTask
+![](attachments/Pasted%20image%2020230907101307.png)
+![](attachments/Pasted%20image%2020230907101347.png)
 ### 3.Experiment
 
 ---
 ## Questions
-
+- How do they partition the operators?
+- The scheduling algorithm seems tend to allocate all operators to the highest level of PUs(e.g. L2) because it use the *latency* to compare different strategies because usually using more PUs will accelerate application
+- … As a result, we can even assert that a uProgram will be allocated to L2, which may be inefficient
+- … Also as a result, the partition that generates the sub DFG is important, but also unclarified
 ---
 ## Reflection
-
