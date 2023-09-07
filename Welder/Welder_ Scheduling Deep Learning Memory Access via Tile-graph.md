@@ -20,7 +20,8 @@ category: paper_review
 ###### Conflicted intra- and inter-operator data reuse patterns
 - An operator is often implemented as nested multi-level loops over all tensor dimensions
 - Within the operator, the data reuse **across multiple memory layers** are often **implicitly optimized** using **loop tiling** 
-- 
+- e.g. Matmul + softmax
+	- 
 
 ### 2.Solution
 
