@@ -117,7 +117,11 @@ These models take a large proportion in DNNs
 2. (2)the ulevel is bounded by the device, and the uPrograms are represented by a list.
 3. (3-4)if g is a dataflow uOperator, and it's lowest level is NULL, its level will be assigned to 0;
 4. (5-18)if the u level is NULL and the operator is not a dataflow uOperator, it will:
-	1. (6-8) for all of its sub operators, it will recursively schedule them, get the uPrograms and corresponding
+	1. (6-8) for all of its sub operators, it will recursively schedule them, get the uPrograms and corresponding ulevel
+	2. (8) The operator's ulevel should higher than its sub operators
+	3. (9-17) we get an existing uProgram, to see if we can merge it to current sub operator
+5. (19-20) if the ulevel isn't NULL, we can 
+
 
 ### 3.Experiment
 
