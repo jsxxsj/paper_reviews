@@ -120,7 +120,9 @@ These models take a large proportion in DNNs
 	1. (6-8) for all of its sub operators, it will recursively schedule them, get the uPrograms and corresponding ulevel
 	2. (8) The operator's ulevel should higher than its sub operators
 	3. (9-17) we get an existing uProgram, to see if we can merge it to current sub operator
-5. (19-20) if the ulevel isn't NULL, we can 
+5. (19-20) if the ulevel isn't NULL, we just use its uprogs
+6. (21-23) we try to schedule the program in different ulevel
+7. (25-27) and choose the fastest one
 
 ###### scheduling optimizations: 
 - function inline
